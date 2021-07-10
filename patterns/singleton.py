@@ -1,8 +1,17 @@
 """
+********************
 Singleton Pattern
+********************
+
+Description from Wikipedia:
+*"the singleton pattern is a software design pattern that
+restricts the instantiation of a class to one 'single' instance.
+This is useful when exactly one object is needed to coordinate
+actions across the system."*
 https://en.wikipedia.org/wiki/Singleton_pattern
 
-A more pythonic way to do it is by creating
+
+The more pythonic way to do it is by creating
 a decorator to store the decorated class instance.
 """
 
