@@ -1,5 +1,7 @@
 .SILENT: test
 
+default: help
+
 # Run tests with pytest
 test:
 	python3 -m unittest -v
