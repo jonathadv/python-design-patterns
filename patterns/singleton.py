@@ -6,9 +6,11 @@ A more pythonic way to do it is by creating
 a decorator to store the decorated class instance.
 """
 
+
 def singleton(cls):
     """
     Create a single instance of a class.
+
     :param cls: a class to be decorated
     :type cls: class
     """
@@ -24,7 +26,9 @@ def singleton(cls):
 @singleton
 class SingletonExample:
     """
-    Singleton class Example
+    SingletonExample
+
+    A class that stores a value of its id.
     """
     def __init__(self):
         self.value: int = id(self)
