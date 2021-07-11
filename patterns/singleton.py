@@ -29,6 +29,7 @@ def singleton(cls):
         if cls not in instances:
             instances[cls] = cls(*args, **kwargs)
         return instances[cls]
+
     return wrapper
 
 
@@ -39,6 +40,7 @@ class SingletonExample:
 
     A class that stores a value of its id.
     """
+
     def __init__(self):
         self.value: int = id(self)
 

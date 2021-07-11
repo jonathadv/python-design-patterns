@@ -6,6 +6,7 @@ A more pythonic way to do it is by creating
 a decorator to store the decorated class instance.
 """
 
+
 def singleton(cls):
     """
     Create a single instance of a class.
@@ -18,4 +19,5 @@ def singleton(cls):
         if cls not in instances:
             instances[cls] = cls(*args, **kwargs)
         return instances[cls]
+
     return wrapper
