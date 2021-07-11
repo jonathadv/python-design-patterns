@@ -1,3 +1,6 @@
+MODULE_NAME = patterns
+TEST_DIR =
+
 .SILENT: test
 
 default: help
@@ -5,6 +8,11 @@ default: help
 # Run tests with pytest
 test:
 	python3 -m unittest -v
+
+# Format with black
+format:
+	pipenv run black $(MODULE_NAME) $(TEST_DIR)
+
 
 # Display this help
 help:

@@ -8,6 +8,7 @@ name = "pypi"
 [dev-packages]
 sphinx = "*"
 sphinx-rtd-theme = "*"
+black = "==21.6b0"
 
 [requires]
 python_version = "3.8"
