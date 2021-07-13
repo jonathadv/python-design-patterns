@@ -1,5 +1,6 @@
 MODULE_NAME = patterns
 TEST_DIR =
+IN_VENV = pipenv run
 
 .SILENT: test
 
@@ -11,7 +12,11 @@ test:
 
 # Format with black
 format:
-	pipenv run black $(MODULE_NAME) $(TEST_DIR)
+	$(IN_VENV) black $(MODULE_NAME) $(TEST_DIR)
+
+# Generate documentation
+doc_html:
+	$(IN_VENV) $(MAKE) -C docs html
 
 
 # Display this help
